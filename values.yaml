@@ -14,7 +14,7 @@ clusterDomain: cluster.local
 ##
 image:
   pullPolicy: IfNotPresent
-  repository: bitnami/minio
+  repository: hungnq139/minio
   tag: latest
 imagePullSecrets: null
 
@@ -22,7 +22,7 @@ imagePullSecrets: null
 ## client used to create a default bucket).
 ##
 mcImage:
-  repository: bitnami/minio-client
+  repository: hungnq139/minio_mc
   tag: latest
   pullPolicy: IfNotPresent
 

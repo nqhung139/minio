@@ -13,20 +13,17 @@ clusterDomain: cluster.local
 ## Set default image, imageTag, and imagePullPolicy. mode is used to indicate the
 ##
 image:
+  pullPolicy: IfNotPresent
   repository: hungnq139/minio
   tag: latest
-  pullPolicy: IfNotPresent
-
-imagePullSecrets:
-  - name: gitlab-registry-secret
-# - name: "image-pull-secret"
+imagePullSecrets: null
 
 ## Set default image, imageTag, and imagePullPolicy for the `mc` (the minio
 ## client used to create a default bucket).
 ##
 mcImage:
-  repository: quay.io/minio/mc
-  tag: RELEASE.2024-11-21T17-21-54Z
+  repository: hungnq139/minio_mc
+  tag: latest
   pullPolicy: IfNotPresent
 
 ## minio mode, i.e. standalone or distributed

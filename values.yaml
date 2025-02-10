@@ -14,8 +14,8 @@ clusterDomain: cluster.local
 ##
 image:
   pullPolicy: IfNotPresent
-  repository: mrnonz/alpine-git-curl
-  tag: alpine3.11
+  repository: bitnami/minio
+  tag: latest
 imagePullSecrets: null
 
 ## Set default image, imageTag, and imagePullPolicy for the `mc` (the minio

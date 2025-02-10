@@ -22,7 +22,7 @@ imagePullSecrets: null
 ## client used to create a default bucket).
 ##
 mcImage:
-  repository: hungnq139/minio_mc
+  repository: bitnami/minio-client
   tag: latest
   pullPolicy: IfNotPresent
 

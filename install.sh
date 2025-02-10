@@ -1,0 +1,1 @@
+helm upgrade --install --values ./values.yaml minio ./minio -n lake --create-namespace

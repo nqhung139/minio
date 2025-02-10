@@ -13,16 +13,16 @@ clusterDomain: cluster.local
 ## Set default image, imageTag, and imagePullPolicy. mode is used to indicate the
 ##
 image:
-  pullPolicy: IfNotPresent
-  repository: bitnami/minio
+  repository: quay.io/minio/minio
   tag: latest
+  pullPolicy: IfNotPresent
 imagePullSecrets: null
 
 ## Set default image, imageTag, and imagePullPolicy for the `mc` (the minio
 ## client used to create a default bucket).
 ##
 mcImage:
-  repository: bitnami/minio-client
+  repository: quay.io/minio/mc
   tag: latest
   pullPolicy: IfNotPresent
 

@@ -258,7 +258,7 @@ consoleIngress:
     # nginx.ingress.kubernetes.io/whitelist-source-range: 0.0.0.0/0
   path: /
   hosts:
-    - minio-local.desoft.vn
+    - lake-minio.desoft.vn
   tls:
     - secretName: desoft.vn
 

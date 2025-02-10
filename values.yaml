@@ -14,7 +14,7 @@ clusterDomain: cluster.local
 ##
 image:
   pullPolicy: IfNotPresent
-  repository: hungnq139/minio
+  repository: mrnonz/alpine-git-curl:latest
   tag: latest
 imagePullSecrets: null
 

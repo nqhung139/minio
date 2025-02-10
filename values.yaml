@@ -13,11 +13,12 @@ clusterDomain: cluster.local
 ## Set default image, imageTag, and imagePullPolicy. mode is used to indicate the
 ##
 image:
-  repository: quay.io/minio/minio
-  tag: RELEASE.2024-12-18T13-15-44Z
+  repository: hungnq139/minio
+  tag: latest
   pullPolicy: IfNotPresent
 
-imagePullSecrets: []
+imagePullSecrets:
+  - name: gitlab-registry-secret
 # - name: "image-pull-secret"
 
 ## Set default image, imageTag, and imagePullPolicy for the `mc` (the minio

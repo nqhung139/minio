@@ -16,7 +16,6 @@ image:
   repository: minio/minio
   tag: latest
   pullPolicy: IfNotPresent
-  insecureSkipTLSVerify: true
 imagePullSecrets: null
 
 ## Set default image, imageTag, and imagePullPolicy for the `mc` (the minio

@@ -13,8 +13,8 @@ clusterDomain: cluster.local
 ## Set default image, imageTag, and imagePullPolicy. mode is used to indicate the
 ##
 image:
-  repository: minio/minio
-  tag: latest
+  repository: bitnami/minio
+  tag: 2024.11.7-debian-12-r1
   pullPolicy: IfNotPresent
 imagePullSecrets: null
 
@@ -22,8 +22,8 @@ imagePullSecrets: null
 ## client used to create a default bucket).
 ##
 mcImage:
-  repository: minio/mc
-  tag: latest
+  repository: bitnami/minio-client
+  tag: 2024.11.21-debian-12-r1
   pullPolicy: IfNotPresent
 
 ## minio mode, i.e. standalone or distributed

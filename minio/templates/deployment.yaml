@@ -63,6 +63,7 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          insecureSkipTLSVerify: true
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command:
             - "/bin/sh"

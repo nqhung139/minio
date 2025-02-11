@@ -14,7 +14,7 @@ clusterDomain: cluster.local
 ##
 image:
   repository: minio/minio
-  tag: RELEASE.2025-02-07T23-21-09Z
+  tag: latest
   pullPolicy: IfNotPresent
 imagePullSecrets: null
 
@@ -23,7 +23,7 @@ imagePullSecrets: null
 ##
 mcImage:
   repository: minio/mc
-  tag: RELEASE.2025-02-08T19-14-21Z
+  tag: latest
   pullPolicy: IfNotPresent
 
 ## minio mode, i.e. standalone or distributed
